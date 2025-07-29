@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>My ASP.NET Application</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Navigation content here -->
+            <a class="nav-link" runat="server" href="~/Login.aspx">Login</a>
+            <a class="nav-link btn btn-outline-light ms-2 px-3 py-1" runat="server" href="~/Register.aspx">Register</a>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
